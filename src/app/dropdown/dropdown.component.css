@@ -1,0 +1,83 @@
+.dropdownContainer__dropbtn {
+  background-color: #ffff;
+  color: #231161;
+  border: 1px solid #231161;
+  padding: 4px 36px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropdownContainer__dropbtn:hover,
+.dropdownContainer__dropbtn:focus {
+  background-color: #231161;
+  color: #ffffff;
+}
+
+.chkbox_container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #231161;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.dropdwn__list {
+  list-style-type: none;
+  padding-left: 10px;
+}
+/* Hide the browser's default checkbox */
+.chkbox_container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #ffffff;
+  border: 1px solid #231161;
+}
+
+/* When the checkbox is checked, add a  background */
+.chkbox_container input:checked ~ .checkmark {
+  background-color: #ffffff;
+  border: 1px solid #231161;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.chkbox_container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.chkbox_container .checkmark:after {
+  left: 6px;
+  top: 3px;
+  width: 6px;
+  height: 11px;
+  border: solid #231161;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

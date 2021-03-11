@@ -1,0 +1,21 @@
+<div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown">
+  <button
+    class="btn btn-outline-primary mr-2 dropdownContainer__dropbtn"
+    id="dropdownManual"
+    ngbDropdownAnchor
+    (focus)="myDrop.open()"
+  >
+    Pay analysis group
+  </button>
+  <div ngbDropdownMenu aria-labelledby="dropdownManual">
+    <ul class="dropdwn__list">
+      <li *ngFor="let name of names">
+        <label class="chkbox_container"
+          >{{name}}
+          <input type="checkbox" />
+          <span class="checkmark"></span>
+        </label>
+      </li>
+    </ul>
+  </div>
+</div>
