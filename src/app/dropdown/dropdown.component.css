@@ -85,3 +85,8 @@
   display: flex;
   justify-content: space-around;
 }
+.dropdownContainer__flex-container p {
+  cursor: pointer;
+  color: #0077cc;
+  font-size: 0.8rem;
+}
