@@ -8,11 +8,15 @@
     Pay analysis group
   </button>
   <div ngbDropdownMenu aria-labelledby="dropdownManual">
+    <div class="dropdownContainer__flex-container">
+      <p (click)="selectAll()">Select all</p>
+      <p (click)="clearAll()">Clear</p>
+    </div>
     <ul class="dropdwn__list">
-      <li *ngFor="let name of names">
+      <li *ngFor="let checkbox of checkboxes">
         <label class="chkbox_container"
-          >{{name}}
-          <input type="checkbox" />
+          >{{checkbox.name}}
+          <input type="checkbox" [(ngModel)]="checkbox.checked" />
           <span class="checkmark"></span>
         </label>
       </li>

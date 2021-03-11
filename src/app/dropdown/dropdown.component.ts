@@ -7,6 +7,29 @@ import { Component, OnInit } from "@angular/core";
 })
 export class DropdownComponent implements OnInit {
   constructor() {}
-  names = ["Ad", "Kobe", "Jule"];
+  checkboxes = [
+    {
+      name: "AD",
+      checked: true
+    },
+    {
+      name: "Kobe",
+      checked: false
+    },
+    {
+      name: "Jule",
+      checked: false
+    }
+  ];
   ngOnInit() {}
+  selectAll() {
+    this.checkboxes.forEach(val => {
+      val.checked = true;
+    });
+  }
+  clearAll() {
+    this.checkboxes.forEach(val => {
+      val.checked = false;
+    });
+  }
 }
