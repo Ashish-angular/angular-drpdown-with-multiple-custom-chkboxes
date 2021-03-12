@@ -9,15 +9,35 @@ export class DropdownComponent implements OnInit {
   constructor() {}
   checkboxes = [
     {
-      name: "AD",
+      name: "Location 1",
       checked: true
     },
     {
-      name: "Kobe",
+      name: "Location 2",
       checked: false
     },
     {
-      name: "Jule",
+      name: "Location 3",
+      checked: false
+    },
+    {
+      name: "Location 4",
+      checked: false
+    },
+    {
+      name: "Location 5",
+      checked: false
+    },
+    {
+      name: "Location 6",
+      checked: false
+    },
+    {
+      name: "Location 7",
+      checked: false
+    },
+    {
+      name: "Location 8",
       checked: false
     }
   ];

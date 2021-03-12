@@ -2,7 +2,7 @@
   background-color: #ffff;
   color: #231161;
   border: 1px solid #231161;
-  padding: 4px 36px;
+  padding: 4px 50px;
   font-size: 0.9rem;
   border-radius: 5px;
   cursor: pointer;
@@ -19,7 +19,7 @@
 .chkbox_container {
   display: block;
   position: relative;
-  padding-left: 35px;
+  padding-left: 25px;
   margin-bottom: 12px;
   cursor: pointer;
   font-size: 1rem;
@@ -32,6 +32,8 @@
 .dropdwn__list {
   list-style-type: none;
   padding-left: 10px;
+  max-height: 230px;
+  overflow-y: auto;
 }
 /* Hide the browser's default checkbox */
 .chkbox_container input {
@@ -102,4 +104,14 @@
   justify-content: flex-end;
   border-top: 1px solid grey;
   z-index: 1000;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.dropdownContainer__btnDone {
+  background-color: #231161;
+  color: #fff;
+  padding: 5px 35px;
+  border: 1px solid #231161;
+  border-radius: 5px;
 }
