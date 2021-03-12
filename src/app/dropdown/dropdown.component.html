@@ -9,8 +9,8 @@
   </button>
   <div ngbDropdownMenu aria-labelledby="dropdownManual">
     <div class="dropdownContainer__flex-container">
-      <p (click)="selectAll()">Select all</p>
-      <p (click)="clearAll()">Clear</p>
+      <span (click)="selectAll()">Select all</span>
+      <span (click)="clearAll()">Clear</span>
     </div>
     <ul class="dropdwn__list">
       <li *ngFor="let checkbox of checkboxes">
@@ -18,12 +18,12 @@
           >{{checkbox.name}}
           <input type="checkbox" [(ngModel)]="checkbox.checked" />
           <span class="checkmark"></span>
-        </label>
+      </label>
       </li>
-    </ul>
-    <div class="dropdownContainer__btnGrp">
-      <span>Cancel</span>
-      <button>Done</button>
+      </ul>
+      <div class="dropdownContainer__btnGrp">
+        <span>Cancel</span>
+        <button>Done</button>
+      </div>
     </div>
   </div>
-</div>
