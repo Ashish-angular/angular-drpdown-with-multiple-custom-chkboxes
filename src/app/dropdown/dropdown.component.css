@@ -81,11 +81,17 @@
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-
+.dropdownContainer__flex-container {
+  padding-left: 5px;
+  padding-right: 10px;
+}
 .dropdownContainer__flex-container span {
   cursor: pointer;
   color: #0077cc;
   font-size: 0.8rem;
+}
+.dropdownContainer__flex-container--clearSpan {
+  float: right;
 }
 .dropdownContainer__btnGrp {
   position: relative;

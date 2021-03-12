@@ -10,7 +10,7 @@
   <div ngbDropdownMenu aria-labelledby="dropdownManual">
     <div class="dropdownContainer__flex-container">
       <span (click)="selectAll()">Select all</span>
-      <span (click)="clearAll()">Clear</span>
+      <span (click)="clearAll()" class ="dropdownContainer__flex-container--clearSpan">Clear</span>
     </div>
     <ul class="dropdwn__list">
       <li *ngFor="let checkbox of checkboxes">
@@ -20,10 +20,10 @@
           <span class="checkmark"></span>
       </label>
       </li>
-      </ul>
-      <div class="dropdownContainer__btnGrp">
-        <span>Cancel</span>
-        <button>Done</button>
-      </div>
+    </ul>
+    <div class="dropdownContainer__btnGrp">
+      <span>Cancel</span>
+      <button>Done</button>
     </div>
   </div>
+</div>
