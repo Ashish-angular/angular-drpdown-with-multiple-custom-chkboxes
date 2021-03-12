@@ -55,5 +55,4 @@ export class DropdownComponent implements OnInit {
   cancel() {
     this.clearAll();
   }
-  
 }
