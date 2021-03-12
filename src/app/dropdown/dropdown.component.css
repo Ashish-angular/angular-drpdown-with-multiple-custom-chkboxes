@@ -13,7 +13,9 @@
   background-color: #231161;
   color: #ffffff;
 }
-
+.dropdownContainer__submenu {
+  width: 100%;
+}
 .chkbox_container {
   display: block;
   position: relative;
@@ -53,7 +55,7 @@
 
 /* When the checkbox is checked, add a  background */
 .chkbox_container input:checked ~ .checkmark {
-  background-color: #ffffff;
+  background-color: #231161;
   border: 1px solid #231161;
 }
 
@@ -82,12 +84,13 @@
   transform: rotate(45deg);
 }
 .dropdownContainer__flex-container {
-  padding-left: 5px;
+  padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 10px;
 }
 .dropdownContainer__flex-container span {
   cursor: pointer;
-  color: #0077cc;
+  color: #2096bb;
   font-size: 0.8rem;
 }
 .dropdownContainer__flex-container--clearSpan {
