@@ -111,7 +111,14 @@
 .dropdownContainer__btnDone {
   background-color: #231161;
   color: #fff;
-  padding: 5px 35px;
+  padding: 5px 30px;
   border: 1px solid #231161;
   border-radius: 5px;
+  margin-left: 20px;
+}
+.dropdownContainer__cancel {
+  color: #2096bb;
+  font-size: 0.9rem;
+  display: inline-block;
+  padding-top: 5px;
 }
