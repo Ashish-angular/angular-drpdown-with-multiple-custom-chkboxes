@@ -22,8 +22,8 @@
       </li>
     </ul>
     <div class="dropdownContainer__btnGrp">
-      <span class="dropdownContainer__cancel">Cancel</span>
-      <button class="dropdownContainer__btnDone">Done</button>
+      <span class="dropdownContainer__cancel" (click)="cancel();myDrop.close()" >Cancel</span>
+      <button class="dropdownContainer__btnDone" (focus)="myDrop.close()">Done</button>
     </div>
   </div>
 </div>

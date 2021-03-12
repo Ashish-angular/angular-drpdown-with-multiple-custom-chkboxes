@@ -52,4 +52,8 @@ export class DropdownComponent implements OnInit {
       val.checked = false;
     });
   }
+  cancel() {
+    this.clearAll();
+  }
+  
 }

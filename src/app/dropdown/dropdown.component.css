@@ -22,7 +22,7 @@
   padding-left: 25px;
   margin-bottom: 12px;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #231161;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -117,11 +117,30 @@
   border: 1px solid #231161;
   border-radius: 5px;
   margin-left: 20px;
+  font-size: 0.9rem;
 }
 .dropdownContainer__cancel {
   color: #2096bb;
   font-size: 0.9rem;
   display: inline-block;
   padding-top: 5px;
-  cursor :pointer;
+  cursor: pointer;
+}
+/* Works on Firefox 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: blue orange;
+}*/
+.dropdwn__list::-webkit-scrollbar {
+  width: 6px; /* width of the entire scrollbar */
+}
+
+.dropdwn__list::-webkit-scrollbar-track {
+  background: #fff; /* color of the tracking area */
+}
+
+.dropdwn__list::-webkit-scrollbar-thumb {
+  background-color: grey; /* color of the scroll thumb */
+  border-radius: 50px; /* roundness of the scroll thumb */
+  border: 1px solid grey; /* creates padding around scroll thumb */
 }
